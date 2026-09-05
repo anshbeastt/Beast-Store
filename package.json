@@ -1,0 +1,18 @@
+{
+  "name": "beast-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beast Store — Handmade Fragrance Candles",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "candles",
+    "fragrance",
+    "artisanal",
+    "ecommerce"
+  ],
+  "author": "Beast Store",
+  "license": "MIT"
+}
