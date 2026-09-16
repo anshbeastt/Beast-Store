@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Beast Store — Handmade Fragrance Candles</title>
-  
+
   <!-- Tailwind CSS CDN with forms & container queries -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  
+
   <!-- Google Fonts: Playfair Display (Serif) & Manrope (Sans) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap"
+    rel="stylesheet">
+
   <!-- Tailwind Configuration for exact aesthetic colors and fonts -->
   <script>
     tailwind.config = {
@@ -40,18 +43,23 @@
       }
     }
   </script>
-  
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="min-h-screen flex flex-col justify-between selection:bg-rose-100">
 
   <!-- BEGIN: Transparent Navigation Bar -->
-  <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-[#fbf8f6]/85 border-b border-[#f0e8e6]/80 transition-all duration-300">
+  <header
+    class="sticky top-0 z-50 w-full backdrop-blur-md bg-[#fbf8f6]/85 border-b border-[#f0e8e6]/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-4 flex items-center justify-between">
-      
+
       <!-- Brand Title / Logo -->
-      <a class="font-serif text-2xl font-bold tracking-tight text-[#1e1b1c] hover:opacity-90 transition-opacity flex items-center gap-2" href="#hero">
-        <img alt="Beast Store Icon" class="w-7 h-7 rounded-full object-contain border border-neutral-200 p-0.5 bg-white shadow-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALhBIxog8tbwdJz1PPgboABGxms49ikCfgnjcrh3o25WP5vNkIlwIkL15Ksfdya7ocQzzG699dJnTVj6gDIBzJbhR4ZXlsDlGy4VVPPCY5QU0YIuTomivGfvktRowCBp2Eb99j0VVUYRQjDY4PFP3KpWGlCgjwh93ZPITy6ncd_wbmghY8p_Ot4sBoP8wRqTGHkk_p3d-1aHjDu_OHMTLg5m8E1ISpJrf1M_Jc6hsDJ9q1mJUO5VeZsCgXM0pcpJW0F0PnoNIRXl478A">
+      <a class="font-serif text-2xl font-bold tracking-tight text-[#1e1b1c] hover:opacity-90 transition-opacity flex items-center gap-2"
+        href="#hero">
+        <img alt="Beast Store Icon"
+          class="w-12 h-12 rounded-full object-contain border border-neutral-200 p-0.5 bg-white shadow-xs"
+          src="images/logo.png">
         <span>Beast Store</span>
       </a>
 
@@ -66,17 +74,22 @@
       <!-- Right Header Actions -->
       <div class="flex items-center space-x-3">
         <!-- Order CTA Button -->
-        <a class="inline-flex items-center space-x-2 bg-[#6b4751] hover:bg-[#583942] text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all shadow-sm shadow-[#6b4751]/20 transform hover:-translate-y-0.5" href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!" rel="noopener noreferrer" target="_blank">
+        <a class="inline-flex items-center space-x-2 bg-[#6b4751] hover:bg-[#583942] text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all shadow-sm shadow-[#6b4751]/20 transform hover:-translate-y-0.5"
+          href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!"
+          rel="noopener noreferrer" target="_blank">
           <!-- WhatsApp / Chat icon -->
           <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+            <path
+              d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+            </path>
           </svg>
           <span class="hidden sm:inline">Chat &amp; Order</span>
           <span class="sm:hidden">Order</span>
         </a>
 
         <!-- Mobile Menu Hamburger Button -->
-        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-neutral-700 hover:bg-neutral-200/50 transition-colors focus:outline-none">
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu"
+          class="md:hidden p-2 rounded-lg text-neutral-700 hover:bg-neutral-200/50 transition-colors focus:outline-none">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
           </svg>
@@ -85,73 +98,95 @@
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-[#f0e8e6] bg-[#fbf8f6]/95 backdrop-blur-md px-6 py-4 space-y-3 transition-all">
-      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors" href="#hero">Home</a>
-      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors" href="#products">Products</a>
-      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors" href="#about">About Us</a>
-      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors" href="#contact">Contact</a>
+    <div id="mobile-menu"
+      class="hidden md:hidden border-t border-[#f0e8e6] bg-[#fbf8f6]/95 backdrop-blur-md px-6 py-4 space-y-3 transition-all">
+      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors"
+        href="#hero">Home</a>
+      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors"
+        href="#products">Products</a>
+      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors"
+        href="#about">About Us</a>
+      <a class="block text-sm font-medium text-neutral-700 hover:text-brand-primary py-1.5 transition-colors"
+        href="#contact">Contact</a>
     </div>
   </header>
   <!-- END: Transparent Navigation Bar -->
 
   <!-- BEGIN: Main Website Content -->
   <main class="flex-grow">
-    
+
     <!-- BEGIN: HeroSection -->
-    <section id="hero" class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 pt-8 pb-16 lg:py-16 scroll-mt-24" data-purpose="hero-banner">
+    <section id="hero" class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 pt-8 pb-16 lg:py-16 scroll-mt-24"
+      data-purpose="hero-banner">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
         <!-- Left Column: Copy & Value Propositions -->
         <div class="lg:col-span-6 space-y-7">
           <!-- Studio Pill Badge -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f3edea] text-[10px] font-semibold tracking-widest text-[#72525c] uppercase">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f3edea] text-[10px] font-semibold tracking-widest text-[#72525c] uppercase">
             <span class="w-1.5 h-1.5 rounded-full bg-[#72525c] animate-pulse"></span>
             <span>Artisanal Studio • Hand-Poured in India</span>
           </div>
           <!-- Brand Monogram Graphic -->
           <div class="w-14">
-            
+
           </div>
           <!-- Main Hero Title -->
-          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.25rem] text-[#1c191a] leading-[1.18] tracking-tight font-medium">
-            Handmade Fragrance Candles <span class="font-normal">—</span> <span class="font-serif italic font-normal text-[#6f4b55]">Order Instantly on WhatsApp</span>
+          <h1
+            class="font-serif text-4xl sm:text-5xl lg:text-[3.25rem] text-[#1c191a] leading-[1.18] tracking-tight font-medium">
+            Handmade Fragrance Candles <span class="font-normal">—</span> <span
+              class="font-serif italic font-normal text-[#6f4b55]">Order Instantly on WhatsApp</span>
           </h1>
           <!-- Hero Subtitle description -->
           <p class="text-neutral-600 text-[15px] sm:text-base leading-relaxed max-w-lg font-normal">
-            Sculptural rose-petal bears and pure botanical wax creations. Designed to evoke sanctuary calm, romantic evenings, and thoughtful gifting.
+            Sculptural rose-petal bears and pure botanical wax creations. Designed to evoke sanctuary calm, romantic
+            evenings, and thoughtful gifting.
           </p>
           <!-- CTAs -->
           <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a class="inline-flex items-center space-x-2.5 bg-[#694650] hover:bg-[#53353e] text-white px-6 py-3.5 rounded-full text-xs font-semibold tracking-wide shadow-md shadow-[#694650]/20 transition-all transform hover:-translate-y-0.5" href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!" rel="noopener noreferrer" target="_blank">
+            <a class="inline-flex items-center space-x-2.5 bg-[#694650] hover:bg-[#53353e] text-white px-6 py-3.5 rounded-full text-xs font-semibold tracking-wide shadow-md shadow-[#694650]/20 transition-all transform hover:-translate-y-0.5"
+              href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!"
+              rel="noopener noreferrer" target="_blank">
               <!-- WhatsApp logo -->
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                </path>
               </svg>
               <span>Order on WhatsApp</span>
             </a>
-            <a class="inline-flex items-center space-x-1.5 border border-neutral-300 bg-white/80 hover:bg-white text-neutral-800 px-5 py-3.5 rounded-full text-xs font-semibold tracking-wide transition-all shadow-xs" href="#products">
+            <a class="inline-flex items-center space-x-1.5 border border-neutral-300 bg-white/80 hover:bg-white text-neutral-800 px-5 py-3.5 rounded-full text-xs font-semibold tracking-wide transition-all shadow-xs"
+              href="#products">
               <span>Explore Collection</span>
               <svg class="w-3.5 h-3.5 ml-1 stroke-current" fill="none" viewBox="0 0 24 24">
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                </path>
               </svg>
             </a>
           </div>
           <!-- Feature Bullets with micro-icons -->
-          <div class="pt-6 border-t border-neutral-200/70 flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-neutral-600 font-medium">
+          <div
+            class="pt-6 border-t border-neutral-200/70 flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-neutral-600 font-medium">
             <div class="inline-flex items-center space-x-2">
               <svg class="w-4 h-4 text-[#835a64]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
               </svg>
               <span>100% Pure Soy</span>
             </div>
             <div class="inline-flex items-center space-x-2">
               <svg class="w-4 h-4 text-[#835a64]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path
+                  d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
               </svg>
               <span>Direct Courier Dispatch</span>
             </div>
             <div class="inline-flex items-center space-x-2">
               <svg class="w-4 h-4 text-[#835a64]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2"></path>
               </svg>
               <span>Luxury Gift Box</span>
             </div>
@@ -159,13 +194,18 @@
         </div>
         <!-- Right Column: Hero Spotlight Product Showcase -->
         <div class="lg:col-span-6 relative flex justify-center lg:justify-end">
-          <div class="relative w-full max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-[#e7d8d8] to-[#fcecee] border-4 border-white aspect-[4/5] sm:aspect-[5/6] max-h-[580px]">
-            <img alt="The Signature Rose Teddy Bear Candle" class="w-full h-full object-cover object-center scale-[1.03] transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoGtNEDhQ8XQ1G5pIXsq2ZOH0pYxXiXCiV2F7FoNp55F1p8Iq2jOvcY-tfDSm2gqc4H076RfE1phW5IMLp_Ps7oDEJEaAtkcvqjVbfGq5VioXuBXeilqTyXTg38MuZExeW0Uv-b2ctEfK4hS71_z5Ld2Rn241o42xkdsQHP2Sy1XJE6LCdk9fggWR3xVeLkezgSylEsbbkoR38PnlDEoUE7x4ttWhFTaiZmm_Srfju6wWYWcxHnkVYnk-c1bos2OJkSJ8XoJAiBd_7qw">
+          <div
+            class="relative w-full max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-[#e7d8d8] to-[#fcecee] border-4 border-white aspect-[4/5] sm:aspect-[5/6] max-h-[580px]">
+            <img alt="The Signature Rose Teddy Bear Candle"
+              class="w-full h-full object-cover object-center scale-[1.03] transition-transform duration-700 hover:scale-105"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoGtNEDhQ8XQ1G5pIXsq2ZOH0pYxXiXCiV2F7FoNp55F1p8Iq2jOvcY-tfDSm2gqc4H076RfE1phW5IMLp_Ps7oDEJEaAtkcvqjVbfGq5VioXuBXeilqTyXTg38MuZExeW0Uv-b2ctEfK4hS71_z5Ld2Rn241o42xkdsQHP2Sy1XJE6LCdk9fggWR3xVeLkezgSylEsbbkoR38PnlDEoUE7x4ttWhFTaiZmm_Srfju6wWYWcxHnkVYnk-c1bos2OJkSJ8XoJAiBd_7qw">
             <!-- Floating Product Badge on bottom of image -->
-            <div class="absolute bottom-5 left-5 right-5 glass-effect px-5 py-4 rounded-2xl border border-white/70 shadow-lg flex items-center justify-between">
+            <div
+              class="absolute bottom-5 left-5 right-5 glass-effect px-5 py-4 rounded-2xl border border-white/70 shadow-lg flex items-center justify-between">
               <div>
                 <span class="block text-[9px] uppercase tracking-widest font-bold text-[#865964]">Iconic Release</span>
-                <span class="block text-sm font-semibold font-serif text-neutral-900 mt-0.5">The Signature Rose Teddy</span>
+                <span class="block text-sm font-semibold font-serif text-neutral-900 mt-0.5">The Signature Rose
+                  Teddy</span>
               </div>
               <div class="text-right">
                 <span class="text-lg font-serif font-bold text-[#694650]">₹320</span>
@@ -178,49 +218,64 @@
     <!-- END: HeroSection -->
 
     <!-- BEGIN: CuratedHighlightsSection -->
-    <section id="products" class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-16 lg:py-20 scroll-mt-24" data-purpose="product-catalog">
+    <section id="products" class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-16 lg:py-20 scroll-mt-24"
+      data-purpose="product-catalog">
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
         <p class="text-[11px] font-bold tracking-widest uppercase text-[#7a5560]">Artisanal Selection</p>
-        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-neutral-900 tracking-tight">Curated Highlights</h2>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-neutral-900 tracking-tight">Curated Highlights
+        </h2>
         <p class="text-neutral-600 text-sm sm:text-[14.5px] leading-relaxed">
-          Sculpted petal by petal with organic waxes and custom aromatics. Each piece is shipped safely packed in our branded keepsake unboxing package.
+          Sculpted petal by petal with organic waxes and custom aromatics. Each piece is shipped safely packed in our
+          branded keepsake unboxing package.
         </p>
       </div>
       <!-- 3-Column Card Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         <!-- CARD 1: The Rose Teddy -->
-        <article class="bg-white rounded-3xl p-4 shadow-sm border border-neutral-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <article
+          class="bg-white rounded-3xl p-4 shadow-sm border border-neutral-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
           <div>
             <!-- Image Frame -->
             <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-neutral-50 mb-5">
-              <span class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-[#79505c] px-3 py-1 rounded-full border border-white">
+              <span
+                class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-[#79505c] px-3 py-1 rounded-full border border-white">
                 Best Seller
               </span>
-              <img alt="The Rose Teddy Candle" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDXsbML7gnQ9AgwmfFgf8ugnHioJkwBEMXeGfJIxH9o7Ljvhq6abITOG-KQbLMDDaSg7oQPMYPzPj_8h3q_3kWNw7D47GvPaPbVJShCxMRx03VY9_W9irqxiDfP48nzkNygntT8jya2yy-PX-vBGEkw7rAWvZ85V8uGGOr9nu6Ejkf-5Eq72Zztr8cYLGoayDRCJR1f8jtfZniS8oqzyDzVL1j1kLjgsRn03gkNPYDWPas05P_qoD7d5rcxpDbLAXv5U7dUTX_QieNJg">
+              <img alt="The Rose Teddy Candle"
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDXsbML7gnQ9AgwmfFgf8ugnHioJkwBEMXeGfJIxH9o7Ljvhq6abITOG-KQbLMDDaSg7oQPMYPzPj_8h3q_3kWNw7D47GvPaPbVJShCxMRx03VY9_W9irqxiDfP48nzkNygntT8jya2yy-PX-vBGEkw7rAWvZ85V8uGGOr9nu6Ejkf-5Eq72Zztr8cYLGoayDRCJR1f8jtfZniS8oqzyDzVL1j1kLjgsRn03gkNPYDWPas05P_qoD7d5rcxpDbLAXv5U7dUTX_QieNJg">
             </div>
             <!-- Content -->
             <div class="px-2">
               <div class="flex items-center justify-between mb-1.5">
                 <span class="text-[10px] font-bold tracking-wider text-neutral-400 uppercase">Floral Sanctuary</span>
-                <span class="text-sm font-semibold font-serif text-neutral-900">₹320&nbsp;<span class="text-xs text-neutral-400 font-sans font-normal">/ Pack Of Four</span></span>
+                <span class="text-sm font-semibold font-serif text-neutral-900">₹320&nbsp;<span
+                    class="text-xs text-neutral-400 font-sans font-normal">/ Pack Of Four</span></span>
               </div>
               <h3 class="font-serif text-xl font-bold text-neutral-900 mb-2">The Rose Teddy</h3>
               <p class="text-neutral-500 text-xs leading-relaxed mb-4">
-                Hand-carved rose petal teddy candle infused with delicate Damask rose petals and warm, soothing vanilla accords.
+                Hand-carved rose petal teddy candle infused with delicate Damask rose petals and warm, soothing vanilla
+                accords.
               </p>
               <!-- Scent Tags -->
               <div class="flex flex-wrap gap-1.5 mb-6">
-                <span class="text-[10px] font-medium bg-[#f6eff1] text-[#714b55] px-2.5 py-0.5 rounded-md">Damask Rose</span>
-                <span class="text-[10px] font-medium bg-[#f6eff1] text-[#714b55] px-2.5 py-0.5 rounded-md">Warm Vanilla</span>
+                <span class="text-[10px] font-medium bg-[#f6eff1] text-[#714b55] px-2.5 py-0.5 rounded-md">Damask
+                  Rose</span>
+                <span class="text-[10px] font-medium bg-[#f6eff1] text-[#714b55] px-2.5 py-0.5 rounded-md">Warm
+                  Vanilla</span>
               </div>
             </div>
           </div>
           <!-- Card Button -->
           <div class="px-2 pb-1">
-            <a class="w-full inline-flex items-center justify-center space-x-2 bg-[#6b4751] hover:bg-[#573740] text-white py-3 rounded-full text-xs font-semibold tracking-wide transition-colors" href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20The%20Rose%20Teddy!" rel="noopener noreferrer" target="_blank">
+            <a class="w-full inline-flex items-center justify-center space-x-2 bg-[#6b4751] hover:bg-[#573740] text-white py-3 rounded-full text-xs font-semibold tracking-wide transition-colors"
+              href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20The%20Rose%20Teddy!"
+              rel="noopener noreferrer" target="_blank">
               <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                </path>
               </svg>
               <span>Order via WhatsApp</span>
             </a>
@@ -228,37 +283,51 @@
         </article>
 
         <!-- CARD 2: Vanilla Dream Teddy -->
-        <article class="bg-white rounded-3xl p-4 shadow-sm border border-neutral-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
+        <article
+          class="bg-white rounded-3xl p-4 shadow-sm border border-neutral-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group">
           <div>
             <!-- Image Frame -->
             <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-[#e8e4e9] mb-5">
-              <span class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-[#79505c] px-3 py-1 rounded-full border border-white">
+              <span
+                class="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-[#79505c] px-3 py-1 rounded-full border border-white">
                 Calming Blend
               </span>
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRb_9GKK38kYUt5ipjqXcxU0TWKxMlqkcr6Ne0LoP1iZ9Evdhy2rtsTKi7TW2nxDZgoaJyFEVoOKdcGiTgSVvz3F_ooROnTs6m3YruC-pV8PnHmJAmd7gkUsWK94V-M8_GaiHsPsSMerdEdndvVmoFkvJRQ8brcQyN68IxpaC2M5dXk6rVmRnj1h9GBugTq6TIyJnuuj0-TE6vDJ0dAFYRUBuwGQ1JyRJFhylOBe3zlZXRjwqWsDDK12eJIVPM3Jtpg" alt="Vanilla Dream Teddy Candle" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRb_9GKK38kYUt5ipjqXcxU0TWKxMlqkcr6Ne0LoP1iZ9Evdhy2rtsTKi7TW2nxDZgoaJyFEVoOKdcGiTgSVvz3F_ooROnTs6m3YruC-pV8PnHmJAmd7gkUsWK94V-M8_GaiHsPsSMerdEdndvVmoFkvJRQ8brcQyN68IxpaC2M5dXk6rVmRnj1h9GBugTq6TIyJnuuj0-TE6vDJ0dAFYRUBuwGQ1JyRJFhylOBe3zlZXRjwqWsDDK12eJIVPM3Jtpg"
+                alt="Vanilla Dream Teddy Candle"
+                class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
             </div>
             <!-- Content -->
             <div class="px-2">
               <div class="flex items-center justify-between mb-1.5">
-                <span class="text-[10px] font-bold tracking-wider text-neutral-400 uppercase">Sleep &amp; Serenity</span>
-                <span class="text-sm font-semibold font-serif text-neutral-900">₹349<span class="text-xs text-neutral-400 font-sans font-normal">/ Pack Of Four</span></span>
+                <span class="text-[10px] font-bold tracking-wider text-neutral-400 uppercase">Sleep &amp;
+                  Serenity</span>
+                <span class="text-sm font-semibold font-serif text-neutral-900">₹349<span
+                    class="text-xs text-neutral-400 font-sans font-normal">/ Pack Of Four</span></span>
               </div>
               <h3 class="font-serif text-xl font-bold text-neutral-900 mb-2">Vanilla Dream Teddy</h3>
               <p class="text-neutral-500 text-xs leading-relaxed mb-4">
-                A soothing wax teddy infused with warm vanilla essence, crafted to bring comfort and serenity to your quiet moments.
+                A soothing wax teddy infused with warm vanilla essence, crafted to bring comfort and serenity to your
+                quiet moments.
               </p>
               <!-- Scent Tags -->
               <div class="flex flex-wrap gap-1.5 mb-6">
-                <span class="text-[10px] font-medium bg-[#f0eff5] text-[#5b4f6b] px-2.5 py-0.5 rounded-md">Vanilla Essence</span>
-                <span class="text-[10px] font-medium bg-[#f0eff5] text-[#5b4f6b] px-2.5 py-0.5 rounded-md">Chamomile</span>
+                <span class="text-[10px] font-medium bg-[#f0eff5] text-[#5b4f6b] px-2.5 py-0.5 rounded-md">Vanilla
+                  Essence</span>
+                <span
+                  class="text-[10px] font-medium bg-[#f0eff5] text-[#5b4f6b] px-2.5 py-0.5 rounded-md">Chamomile</span>
               </div>
             </div>
           </div>
           <!-- Card Button -->
           <div class="px-2 pb-1">
-            <a class="w-full inline-flex items-center justify-center space-x-2 bg-[#6b4751] hover:bg-[#573740] text-white py-3 rounded-full text-xs font-semibold tracking-wide transition-colors" href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20Vanilla%20Dream%20Teddy!" rel="noopener noreferrer" target="_blank">
+            <a class="w-full inline-flex items-center justify-center space-x-2 bg-[#6b4751] hover:bg-[#573740] text-white py-3 rounded-full text-xs font-semibold tracking-wide transition-colors"
+              href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20Vanilla%20Dream%20Teddy!"
+              rel="noopener noreferrer" target="_blank">
               <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                </path>
               </svg>
               <span>Order via WhatsApp</span>
             </a>
@@ -270,7 +339,8 @@
 
     <!-- BEGIN: AboutSanctuarySection -->
     <section id="about" class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-16 scroll-mt-24" data-purpose="brand-story">
-      <div class="relative bg-[#f8f2f2]/70 border border-[#eee4e5] rounded-3xl px-8 py-14 sm:p-16 text-center max-w-4xl mx-auto shadow-xs">
+      <div
+        class="relative bg-[#f8f2f2]/70 border border-[#eee4e5] rounded-3xl px-8 py-14 sm:p-16 text-center max-w-4xl mx-auto shadow-xs">
         <!-- Section Eyebrow -->
         <p class="text-[10.5px] font-bold tracking-widest uppercase text-[#7f5763] mb-3">About Our Sanctuary</p>
         <!-- Heading -->
@@ -279,13 +349,16 @@
         </h2>
         <!-- Story Copy -->
         <p class="text-neutral-600 text-sm sm:text-[15px] leading-relaxed max-w-2xl mx-auto mb-9 font-normal">
-          At Beast Store, each candle is lovingly hand-poured in small artisanal batches using 100% pure soy wax and botanical fragrance oils. We believe fragrance has the power to transform spaces into warm sanctuaries of calm and romance. Every piece is crafted not just as a candle, but as a memorable work of sculptural art.
+          At Beast Store, each candle is lovingly hand-poured in small artisanal batches using 100% pure soy wax and
+          botanical fragrance oils. We believe fragrance has the power to transform spaces into warm sanctuaries of calm
+          and romance. Every piece is crafted not just as a candle, but as a memorable work of sculptural art.
         </p>
         <!-- Brand Guarantees -->
         <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-semibold text-neutral-700">
           <div class="inline-flex items-center space-x-2">
             <svg class="w-4 h-4 text-[#7b515c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
             </svg>
             <span>Clean Burn Guarantee</span>
           </div>
@@ -293,7 +366,9 @@
           <div class="inline-flex items-center space-x-2">
             <!-- Leaf / Organic icon -->
             <svg class="w-4 h-4 text-[#7b515c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              <path
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
             </svg>
             <span>Phthalate &amp; Toxin-Free</span>
           </div>
@@ -301,14 +376,16 @@
       </div>
     </section>
     <!-- END: AboutSanctuarySection -->
-    
+
   </main>
 
   <!-- BEGIN: MainFooter -->
-  <footer id="contact" class="w-full bg-[#f6f0ef] border-t border-[#ebdfde] mt-12 scroll-mt-24" data-purpose="page-footer">
+  <footer id="contact" class="w-full bg-[#f6f0ef] border-t border-[#ebdfde] mt-12 scroll-mt-24"
+    data-purpose="page-footer">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-12">
       <!-- Top Footer Row -->
-      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-[#e7dbd9]">
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-[#e7dbd9]">
         <!-- Left: Brand Info -->
         <div class="max-w-sm space-y-2">
           <span class="font-serif text-xl font-bold tracking-tight text-neutral-900 block">Beast Store</span>
@@ -319,16 +396,23 @@
         <!-- Right: Contact info & Links -->
         <div class="flex flex-wrap items-center gap-6 text-xs text-neutral-700">
           <!-- WhatsApp Inquiries -->
-          <a class="inline-flex items-center space-x-2 hover:text-[#6f4b55] transition-colors font-medium" href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!" rel="noopener noreferrer" target="_blank">
+          <a class="inline-flex items-center space-x-2 hover:text-[#6f4b55] transition-colors font-medium"
+            href="https://wa.me/919457102056?text=Hi%20Beast%20Store,%20I%20want%20to%20order%20a%20candle!"
+            rel="noopener noreferrer" target="_blank">
             <svg class="w-4 h-4 text-[#6f4b55]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 9H7v-2h10v2zm-4 4H7v-2h6v2z"></path>
+              <path
+                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 9H7v-2h10v2zm-4 4H7v-2h6v2z">
+              </path>
             </svg>
             <span>WhatsApp Inquiries</span>
           </a>
           <!-- Email -->
-          <a class="inline-flex items-center space-x-2 hover:text-[#6f4b55] transition-colors font-medium" href="mailto:hello@beaststore.in">
+          <a class="inline-flex items-center space-x-2 hover:text-[#6f4b55] transition-colors font-medium"
+            href="mailto:hello@beaststore.in">
             <svg class="w-4 h-4 text-[#6f4b55]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
             </svg>
             <span>anshbeastt@gmail.com</span>
           </a>
@@ -337,7 +421,9 @@
             <!-- Instagram icon -->
             <a aria-label="Instagram" class="p-1 hover:text-neutral-900 transition-colors" href="#" title="Instagram">
               <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                </path>
               </svg>
             </a>
             <!-- Chat icon -->
@@ -347,17 +433,20 @@
               </svg>
             </a>
             <!-- Globe/Website icon -->
-            <a aria-label="Website" class="p-1 hover:text-neutral-900 transition-colors" href="https://beaststore.in" title="Website">
+            <a aria-label="Website" class="p-1 hover:text-neutral-900 transition-colors" href="https://beaststore.in"
+              title="Website">
               <svg class="w-3.5 h-3.5 fill-none stroke-current" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke-width="2"></path>
+                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"
+                  stroke-width="2"></path>
               </svg>
             </a>
           </div>
         </div>
       </div>
       <!-- Bottom Copyright & Studio info -->
-      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-500 font-normal space-y-2 sm:space-y-0">
+      <div
+        class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-500 font-normal space-y-2 sm:space-y-0">
         <p>© 2025 Beast Store (beaststore.in). Handcrafted with love.</p>
         <p class="tracking-wide">Beast Store&nbsp; •&nbsp; Sanctuary Scents</p>
       </div>
@@ -385,4 +474,5 @@
   </script>
 
 </body>
+
 </html>
